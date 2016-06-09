@@ -1,0 +1,14 @@
+plesk:
+  image: plesk/plesk:12.5
+  ports:
+    - 80/tcp
+    - 21/tcp
+    - 20/tcp
+    - 443/tcp
+    - 8880/tcp
+    - 8443/tcp
+    - 8447/tcp
+  restart: always
+  tty: true
+  privileged: true
+  stdin_open: true 
